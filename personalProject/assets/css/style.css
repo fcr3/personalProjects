@@ -1,0 +1,125 @@
+body, html{ 
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+#navbar {
+    margin-bottom: 16px;
+    z-index: 2;
+    background-color: #003650;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+}
+
+#navbar .logo {
+    z-index: inherit;
+    margin-top: 0.35%;
+    display: block;
+    position: relative;
+    float: left;   
+}
+
+#navbar .logo p{
+    display: inline;
+    margin-left: 30px;
+    color: white;
+    font-size: 36px;
+    vertical-align: 10px;
+}
+
+#navbar .logo img{
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+}
+
+#navbar .nav {
+    color: white;
+    z-index: inherit;
+    position: relative;
+    float: right;
+}
+
+#navbar .nav .navbar.item {
+    text-align: center;
+    padding: 0px 10px 0px 10px;
+    z-index: inherit;
+    margin-right: 40px;
+    position: relative;
+    color: white;
+    text-decoration: none;
+    display: inline;
+    font-size: 24px;
+}
+
+.navbar.item:hover{
+    transition-duration: 0.3s;
+    opacity: 0.3;
+    border-bottom: 2px solid white;
+}
+
+#content-start{
+    background-image: url("../img/portland.jpg");
+    background-attachment: fixed;
+    position: relative;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: cover;
+	min-width: 700px;
+}
+
+#content-start #welcome-text {
+    z-index: 4;
+    position: fixed;
+    margin-top: 10%;
+    width: 100%;
+    font-size: 80px;
+    min-width: 10%;
+    color: white;
+    text-align: center;
+}
+
+#content-hike {
+    position: relative;
+    background-image: url("../img/portland.jpg");
+    background-attachment: fixed;
+    position: relative;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: cover;
+	min-width: 700px;
+}
+
+#content-hike img{
+    padding: 10px;
+    background-color: white;
+    object-fit: cover;
+    width: 40%;
+}
+
+#content-beach {
+    background-image: url("../img/beaches.jpg");
+    background-attachment: fixed;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: cover;
+	min-width: 700px;
+}
+
+#content-beach p{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    color: white;
+    font-size: 64px;
+}

@@ -1,0 +1,531 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    /** body: font-family: 'Lusitana', serif; */
+    /** body: font-family: 'Raleway', sans-serif; */
+    /** font-sizes: 36px menu 60px header */
+}
+
+/**
+* of Shared Web Elements
+*/
+
+#navbar {
+    z-index: 4;
+    position: fixed;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    font-family: 'Montserrat', sans-serif;
+
+    background: #000000;
+    mix-blend-mode: normal;
+}
+
+#navbar .logo {
+    position: relative;
+    object-fit: cover;
+    height: 48px;
+    width: 48px;
+    margin-left: 12%;
+    background: url("../img/compact-disc.png");
+}
+
+#navbar .logo a{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+}
+
+#navbar .alphabet {
+    position: relative;
+    color: white;
+    font-size: 18px;
+    margin-left: 5%;
+    margin-right: 2%;
+}
+
+#navbar .navbarmenu {
+    position: relative;
+    width: 32%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#navbar .alphabet i:hover {
+    color: rgb(137, 33, 235);
+}
+
+#navbar .navbarmenu .navbar.item {
+    color: white;
+    text-decoration: none;
+    margin-left: 10%;
+    text-align: center;
+    font-size: 14px;
+    position:relative;
+    
+}
+
+#navbar .navbarmenu .navbar.item:hover {
+    color: rgb(137, 33, 235);
+}
+
+#bottombar {
+    height: 4%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    z-index: 0;
+    left:0px;
+    bottom:0px;
+    position: relative;
+}
+
+#bottombar .bottom.item {
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 14.75%;
+    text-decoration: none;
+}
+
+#bottombar .bottom.item:hover {
+    color: rgb(137, 33, 235);
+}
+
+/**
+* End of Shared Web Elements
+*/
+
+
+/**
+* Welcome Page CSS
+*/
+
+#welcome_page .welcome_message {
+    font-family: 'Lusitana', serif;
+    font-size: 65px;
+    color: white;
+    position: relative;
+    bottom: 430px;
+    left: 420px;
+  }
+  
+  #welcome_page .welcome_description {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: white;
+    position: relative;
+    bottom: 420px;
+    left: 92px;
+  }
+  
+  #welcome_page .explore_genres {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: orange;
+    position: relative;
+    bottom: 380px;
+    left: 470px;
+  }
+  
+  
+  #welcome_page .Genre .window_item1 img {
+    object-fit: cover;
+    position: relative;
+    height: 285px;
+    width: 285px;
+    bottom: 60px;
+    left: 200px;
+    float: left;
+    margin-right: 100px;
+    margin-bottom: 0px;
+  }
+  
+  #welcome_page .Genre .genre_name1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    color: black;
+    position: relative;
+    top: 245px;
+    right: 70px;
+  }
+  
+  #welcome_page .Genre .window_item2 img {
+    object-fit: cover;
+    position: relative;
+    height: 285px;
+    width: 285px;
+    bottom: 85px;
+    left: 200px;
+    float: left;
+    margin-right: 100px;
+    margin-bottom: 0px;
+  }
+  
+  #welcome_page .Genre .genre_name2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    color: black;
+    position: relative;
+    top: 220px;
+    right: 55px;
+  
+  }
+  
+  #welcome_page .Genre .window_item3 img {
+    object-fit: cover;
+    position: relative;
+    height: 285px;
+    width: 285px;
+    bottom: 112px;
+    left: 200px;
+    float: left;
+    margin-right: 100px;
+    margin-bottom: 0px;
+  }
+  
+  #welcome_page .Genre .genre_name3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    color: black;
+    position: relative;
+    top: 192px;
+    right: 80px;
+  
+  }
+
+/**
+* End of Welcome Page CSS
+*/
+
+
+/**
+* Search Page CSS
+*/
+
+#searchpage .searchbar {
+    z-index: 1;
+    grid-area: searchbar;
+    margin-top: 6%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    box-sizing: border-box;
+    height: 56px;
+    display: flex;
+    align-items: center;
+}
+
+#searchpage .searchbar .logo {
+    background-image: url("../img/search.png");
+    object-fit: cover;
+    margin-left: 1%;
+    height: 32px;
+    width: 32px;
+}
+
+#searchpage .searchbar .bar {
+    color: grey;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    margin-left: 2%;
+}
+
+#searchpage .aLabel {
+    z-index: 1;
+    margin-top: 3%;
+    grid-area: atitle;
+    background-color: rgb(137, 33, 235);
+    border: 2px rgb(137, 33, 235) solid;  
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);  
+    display: flex;
+    align-items: center;
+}
+
+#searchpage .aLabel .label {
+    font-size: 24px;
+    margin-left: 2%;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+#searchpage .aContainer {
+    z-index: 1;
+    grid-area: ares;
+}
+
+#searchpage .aContainer .Artist {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+#searchpage .aContainer .Artist .Adele {
+    position: relative;
+    background-image: url("../img/smalladele.jpg");
+    object-fit: cover;
+    overflow: hidden;
+    width: 50%;
+    height: 138px;
+}
+
+#searchpage .aContainer .Artist .Name {
+    position: relative;
+    width: 50%;
+    height: auto;
+    text-align: center;
+    color: black;
+    font-size: 24px;
+}
+
+#searchpage .sLabel {
+    z-index: 1;
+    margin-top: 3%;
+    grid-area: stitle;
+    background-color: rgb(137, 33, 235);
+    border: 2px rgb(137, 33, 235) solid;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+}
+
+#searchpage .sLabel .label {
+    font-size: 24px;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 2%;
+    color: white;
+}
+
+#searchpage .sContainer {
+    z-index: 1;
+    grid-area: sres;
+}
+
+#searchpage .sContainer .song {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 2%;
+}
+
+#searchpage .sContainer .song .album {
+    position: relative;
+    background-color: black;
+    overflow: hidden;
+    width: 40%;
+    height: 138px;
+}
+
+#searchpage .sContainer .song .album img {
+    object-fit: cover;
+    width: 100%;
+}
+
+#searchpage .sContainer .song .Name {
+    position: relative;
+    width: 60%;
+    height: auto;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+}
+
+#searchpage {
+    z-index: 0;
+    position: relative;
+    background-size: cover;
+    font-family: 'Raleway', sans-serif;
+    background-image: url("../img/piano.jpg");
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-gap: 8px;
+    padding-bottom: 24px;
+    grid-template-columns: 2% 8% 16% 20% 20% 20% 7% 3%;
+    grid-template-areas: 
+        ". . . . . . . ."
+        ". . . . . . . ."
+        ". . searchbar searchbar searchbar searchbar . ."
+        ". . atitle atitle stitle stitle . ."
+        ". . ares ares sres sres . ."
+        ". . ares ares sres sres . ."
+        ". . ares ares sres sres . ."
+        ". . ares ares sres sres . ."
+        ". . ares ares sres sres . ."
+        ". . ares ares sres sres . ."
+        ". . ares ares sres sres . ."
+        ". . ares ares sres sres . ."
+        ". . ares ares sres sres . .";
+}
+
+/**
+* End of Search Page CSS
+*/
+
+
+/**
+* Arist Page CSS
+*/
+
+#artistpage{
+    z-index:0;
+    display:grid;
+    position:relative;
+    background-size:cover;
+    color:#FFF7F7;
+    background-image:url("../img/adele1.jpg");
+    min-height:200%;
+    width:100%;
+}
+
+#artistpage .background-overlay{
+    z-index:0;
+    background: linear-gradient(
+                     rgba(20,20,20, .5), 
+                     rgba(20,20,20, .5));
+    background-size: cover;
+    width:100%;
+    min-height: 100%;
+    font-family: 'Raleway', sans-serif;
+
+
+}
+
+#artistpage .album-content .album-1{
+    margin-top:8%;
+    display:grid;
+    grid-gap:8px;
+    grid-template-columns:  10% 15% 5% 5% 5% 40% 10% 5%;
+    grid-template-areas:
+        "adele adele adele adele adele adele adele adele"
+        ". . . nineteen . song . ."
+        ". . . . . song . ."
+        ". . . . . song . ."
+        ". . . . . song . ."
+        ". . . . . song . ."
+        ". . . . . song . ."
+        ". . . . . song . ."
+        ". . . . . song . ."
+        ". . . . . song . ."
+        ". . . . . song . ."
+        ". . . . . song . ."
+        ". . . . . song . ."
+        ". . . . . song . .";
+}
+
+#artistpage .album-content .album-2{
+    margin-top:4%;
+    display:grid;
+    grid-gap:8px;
+    grid-template-columns:  10% 15% 5% 5% 5% 40% 10% 5%;
+    grid-template-areas:
+        ". . . twenty-one . song . ."
+        ". . . . . song . ."
+        ". . . . . song . ."
+        ". . . . . song . ."
+        ". . . . . song . ."
+        ". . . . . song . ."
+        ". . . . . song . ."
+        ". . . . . song . ."
+        ". . . . . song . ."
+        ". . . . . song . ."
+        ". . . . . song . ."
+        ". . . . . song . ."
+        ". . . . . song . .";
+}
+
+
+#artistpage .artist-name{
+    font-size:56;
+    grid-area:name;
+    position: fixed;
+    margin-top:17%;
+    margin-left:12%;
+}
+
+#artistpage .buttons-name{
+    grid-area:sbutton;
+    position: fixed;
+    margin-top:30%;
+    margin-left:12%;
+}
+
+#artistpage .buttons-name .alb-button{
+    border:8px rgb(137, 33, 235) solid;
+    padding: 16px;
+    margin-top: -80px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    background: #18181A;
+}
+
+
+#artistpage .buttons-name .alb-button .album{
+    text-align: center;
+}
+
+#artistpage .buttons-name .song-button{
+    border:2px rgb(137, 33, 235) solid;
+    padding: 16px;
+    margin-top: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+#artistpage .buttons-name .song-button:hover{
+    opacity:1;
+    background: #40434E;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#artistpage .buttons-name .song-button .song{
+    text-align: center;
+}
+
+#artistpage .buttons-name .share-button{
+    border:2px rgb(137, 33, 235) solid;
+    padding: 16px;
+    margin-top: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+#artistpage .buttons-name .share-button:hover{
+    opacity:1;
+    background: #40434E;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#artistpage .buttons-name .share-button .share{
+    text-align: center;
+}
+
+#artistpage .album-1-name{
+    grid-area:nineteen;
+    font-size:48;
+    font-weight:900;
+    margin-top:0%;
+}
+
+#artistpage .album-2-name{
+    grid-area:twenty-one;
+    font-size:48;
+    font-weight:900;
+    margin-top:0%;
+}
+
+#artistpage .songs{
+    grid-area:song;
+    font-size:30;
+    text-shadow: 0px 4px 10px #8921EB;
+}
