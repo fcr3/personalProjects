@@ -1,0 +1,178 @@
+<html> 
+<head>
+	<meta charset="utf-8">
+    <title>WDD | Hands-on 2</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/instructions.css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div id="container">
+		<a href="../../index.html">
+			<div id="header-back"><img id="header-img" src="assets/img/home.svg">
+			</div>
+		</a>
+		<div id="header">
+			<div id="header-caption">
+				<div id="header-caption-logo"><img class="img-scaled" src="assets/img/logo.png" /></div>
+				<div id="header-caption-name">Web Design DeCal</div>
+				<div class="clear"></div>
+			</div>
+			<div id="header-content">
+				<!-- ASSIGNMENT NAME -->
+				<div id="header-title">Hands-on 2</div>
+				<div id="header-due">February 8th</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div class="section">
+			<div class="info">
+				<!-- ASSIGNMENT TITLE -->
+				<div class="info-title">Selectors & Pseudo Selectors</div>
+				<div class="info-content">
+					<!-- REQUIRED TOOLS -->
+					<div class="info-required">Required Tools: Google Chrome and a text editor</div>
+					<!-- INTRODUCTION -->
+					<div class="info-intro">Today, we will use our knowledge of selectors and pseudo selectors to style our <em>WDD-yft</em> landing page. To get credit for lab, <b>let your TA know when you're done</b> and they will provide you with the <b>secret code word</b> of the day for <b>attendance</b>. While you wait, discuss design decisions with your groupmates! </div>
+				</div>
+			</div>
+			<div class="body">
+				<div class="body-header">Assignment</div>
+
+				<p>At the end of this hands-on, you should have something like the page below (split into two pics)</p>
+				<img src="assets/img/final_1.png">
+				<br>
+				<hr>
+				<br>
+				<img src="assets/img/final_2.png">
+				
+				<div class = "body-header"><br>Step 1: Linking our files</div>
+
+				<p>Open the starting <b>index.html</b> file in your preferred browser.</p>
+				<p>Woah, this site looks nothing like the end product. It should look like this right now:</p>
+				
+				<img src="assets/img/step_0.png">
+				
+				<p>This is because we haven't linked our HTML and CSS files. Before we proceed, open <b>index.html</b> and <b>style.css</b> in your text editor so we can make this site look goooood.<p>
+
+				<ul>
+					<li>Now, correctly link <b>index.html</b> to <b>style.css</b>.</li>
+				</ul>
+
+				<p>Much, much better. You should have something that looks like this:</p>
+				<img src="assets/img/step_1.png">
+				<p>Without this link, our html structure wouldn't be able to know where to find our css selectors that make the site look siq and cool.</p>
+			
+				<div class = "body-header"><br>Step 2: Playing with <span style="text-decoration:line-through">fire</span> Pseudo Selectors</div>
+				<p>Pseudo selectors are really cool because they allow us to put our elements in a special, temporary state. This helps draw the focus of the user to certain parts of the page and can also provide a response to user actions</p>
+
+				<p>Currently, if you place your cursor over the navbar options, nothing happens. Let's provide a visual cue to the user! </p>
+
+				<ul>
+					<li>Add the appropriate pseudo-class to <b>nav-element</b> so that when the cursor is over a part of the navbar, we can eventually make something happen (once properties are added)</li>
+					<li>Now add a property to this pseudo selector so that the navbar elements are underlined when the cursor is over it.</li>
+					<li>Change the property of the <b>cursor</b> so that the nav elements appear to be clickable via the cursor when the cursor is over them. Under what selector can this property go under???<em> Note: If you don't know what this visual looks like, visit one of your favorite websites and observe what happens to the cursor when you place it over a clickable item (like the nav bar). It's slight, but provides an almost subconscious cue to the user that something can be clicked.</em>
+				</ul>
+
+				<p>Great! Now our navbar seems functional! It should look like this when you hover over it:<p>
+
+				<img src="assets/img/step_2_1.png">
+
+				<p>But we aren't done with our pseudo selectors. Our <b>button</b> does not visually indicate to the user that it can be clicked.</p>
+
+				<ul>
+					<li>Add the entire missing pseudo selector to our css so the button will provide some sort of visual response when we place the cursor over it.</li>
+					<li>Slightly change some properties, like color or opacity, to provide a good indication of the button's action and to distinguish it from its normal state. Keep design principles in mind.</li>
+					<li>Change the cursor property so it it seems clickable (like we did for the navbar).</li>
+					<li>The pseudo state response is really fast. Feel free to add a transition to slow it down and make it more pleasing.</li>
+				</ul>
+
+				<p><em>note: sometimes, certain attributes require browser prefixes for browser compatibility, such as "-webkit-" for chrome and safari, "-moz-" for firefox, and "-o-"" for anyone that uses opera. If you're interested, feel free to Google this for more info.</em></p>
+
+				<p>This is what it should have looked like before:</p>
+				<img src="assets/img/step_2_2A.png">
+
+				<p>This is what it might look like when you hover over your button:</p>
+
+				<img src="assets/img/step_2_2B.png">
+
+				<p>There are so many possiblities and you should explore websites on your own when you get a chance!</p>
+
+
+				<div class = "body-header"><br>Step 3: All on your own</div>
+				<p>Up for a challenge??<p>
+
+				<ul>
+					<li>In the html file, add the appropriate link tag to the entire phrase <b>"Check your status here"</b> so that when the user clicks this phrase, it will direct the user to some other page. Choose whatever page you would like.</li>
+					<li>Give that tag an id</li>
+					<li>In the css file, select this specific tag and give it some cool properties in its normal state</li>
+					<li>Now, add a pseudo selector and change some properties for when your cursor is over the text so a user can easily recognize that it can be clicked</li>
+					<li>Add a pseudo selector for when your clicking down on the link. Add new properties to differentiate it from its normal state.</li>
+					<li>Finally, add a pseudo selector to indicate to the user when they have clicked this link before. Add new properties to differentiate it from its other states.</li>
+				</ul>
+					<em>Hint: it is helpful to check your work in an incognito or private browser window when dealing with different pseudo selectors for links. Otherwise, your browser may remember your history of clicking the link and you won't be able to observe the different pseudo states since it will always appear in the state of being visited.</em>
+
+				<p>Awesome job! See how much you can do for just one tag? Hopefully you're getting the hang of these selectors now! The addition in step 3 was minimal, but can have a great effect. It should look similar to this:</p>
+
+				<img src="assets/img/step_3.png">
+
+				<div class = "body-header"><br>Step 4: Some more CSS and fun extras</div>
+				
+				<p>Now we can play around with other CSS properties to make our site look even better. Use your creativity and design knowledge to standout (or maybe blend in).<p>
+
+				<ul>
+					<li>Add some border properties to the <b>button</b> and <b>form</b> (whatever you think will work)</li>
+					<li>Add a pseudo selector to create a good visual response when your cursor goes over gallery items under "Our Rides"</li>
+					<li>Create a pseudo state just for the 1st and 3rd items. Then create a <em>different</em> pseudo state for just the 2nd and 4th items. Think of how many different ways you can select them.</li>
+				</ul>
+
+				<p>We can even make fine changes to default elements for an even greater user experience. Take a look at the <b>form</b> in our html code. When you click an input box, you'll notice that there is an outline color (in this case, a lightly blue) to indicate to the user that they are focused on this box and can type here. This outline color is essentially a default pseudo-class. Let's change the <b>input</b> box to match the main colors of the website.</p>
+
+				<div id="inspect-button">Boost Your Knowledge</div>
+				<div id="inspect-tutorial" class="hidden">
+					<div class = "body-header">Optional Tutorial</div>
+					<p><em>You can see this default attribute of outline color in action by selecting one of the <b>input</b> lines in web inspector, and then clicking <b> :hov</b> by "filter" and finally selecting <b>:focus</b> in the checkbox dropdown, which activates the <b>:focus</b> selector for just this element. Skimming through the web inspector, you'll notice that a new attribute within the <b>:focus</b> selector has appeared, <b>outline</b>, which is implementing the default -webkit-focus-ring-color.</em></p>
+
+					<div class="inspect-img">
+						<img src="assets/img/webinspect1.png">
+					</div>
+					<div class="inspect-img">
+						<img src="assets/img/webinspect2.png">
+					</div>
+				</div>
+
+				<ul>
+					<li>Because <b>input</b> has a default "outline-color", we don't need to create a pseudo selector, but we can change it within the actual <b>input</b> tag in order to override the default property!</li>
+					<li>Add an <b>outline-color</b> to match the color of the normal state of the <b>button</b>. This is a minor touch that can go unnoticed, but actually adds a lot to the design.</li>
+				</ul>
+
+				<p>Does your form now look like this when you type text?</p>
+
+				<img src="assets/img/step_2_3.png">
+
+				<p>Your final website should now look something like this and have some super sick pseudo states (maybe with your own creative touches!). These are two pictures, which is why it might look odd that the nav bar reappears.</p>
+
+				<img src="assets/img/final_1.png">
+				<br>
+				<hr>
+				<br>
+				<img src="assets/img/final_2.png">
+
+				<p>For more selector practice, head to this great <a href="https://flukeout.github.io/">practice game</a> made by @flukeout.</p>
+
+				<div class="info">
+				<!-- End of Assignment Insructions -->
+					<div class = "body-header">Completed the Lab?</div>
+					<div class="info-content">
+						<!-- REQUIRED TOOLS -->
+						<!-- INTRODUCTION -->
+						<div class="info-intro">Let your TA know so they can mark you for attendance!</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="assets/js/instructions.js"></script>
+</body>
+</html>
