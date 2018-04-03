@@ -1,0 +1,293 @@
+html, body {padding: 0; margin: 0; }
+
+/**
+Fonts:
+font-family: 'Pacifico', cursive;
+font-family: 'Concert One', cursive;
+font-family: 'Arimo', sans-serif;
+**/
+
+.topbar {
+    z-index: 10;
+    position: fixed;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    background-color: black;
+    opacity: 0;
+}
+
+.topbar #leftside {
+    position: relative;
+    max-height: 60px;
+    width: auto;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+.topbar #leftside #icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 15px 20px 20px;
+    
+}
+
+.topbar #leftside #icon img {
+    width: 36px;
+    height: 36px;
+}
+
+.topbar #leftside #message {
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 20px 0px;
+    display: none;
+}
+
+.topbar #menubar {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    max-height: 60px;
+    float: right;
+    color: white;
+}
+
+.topbar #menubar .menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-color: rgb(0, 110, 255);
+    border-bottom-style: solid;
+    border-bottom-width: 0px;
+    margin-left: 2px;
+    margin-right: 2px;
+    height: 58px;
+    width: 80px;
+}
+
+.topbar #menubar .menu-item .menu-icon{
+    width: 24px;
+    height: 24px;
+}
+
+.topbar #menubar form input {
+    width: 150px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: auto;
+    margin-left: 15px;
+    margin-right: 20px;
+    padding-left: 10px;
+    color: grey;
+    border: white solid 1px;
+    border-radius: 2px;
+    transition: width 0.3s ease-in-out;
+}
+
+.topbar #menubar form input[type=text]:focus {
+    width: 300px;
+    transition-duration: 0.3s;
+}
+
+.topbar #menubar #search img{
+    width: 24px;
+    height: 24px;
+}
+
+/**
+#topbar #menubar .menu-item:hover{
+    border-bottom: white solid 2px;
+    transition-duration: 0.25s;
+}
+**/
+
+/** Actual webpage stuff now **/
+
+#home {
+    z-index: 0;
+    width: auto;
+    height: auto;
+}
+
+#home #loadingbar {
+    position: fixed;
+    z-index: 11;
+    width: 100%;
+    height: 100%;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#home #loadingbar p {
+    opacity: 0.0;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 150px;
+    color: white;
+}
+
+#home .backPhoto {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    background-image: url('finalProject/assets/img/portland.jpg');
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale();
+    background-attachment: fixed;
+    color: white;
+    
+    display: grid;
+    grid-template-areas: ". h1 h1 h1 ."
+                         ". . . . ."
+                         ". . ar . ."
+                         ". . . . .";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 8fr 1fr 0.5fr;
+}
+
+#home .backPhoto h1 {
+    grid-area: h1;
+    margin-top: 8.5%;
+    opacity: 0;
+    font-size: 64px;
+    font-family: 'Pacifico', cursive;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#home .backPhoto #downArrow {
+    grid-area: ar;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+}
+
+#home .backPhoto #downArrow h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 32px;
+    padding: 20px 40px 20px 40px;
+    background-color: rgba(0, 0, 0, 0.9);
+    opacity: 0;
+}
+
+#home .backPhoto #downArrow img {
+    z-index: 3;
+    width: 32px;
+    height: 32px;
+    margin-top: -14%;
+    opacity: 0;
+}
+
+#home #biography {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: grid;
+    grid-template-areas: ". . . . ."
+                         ". bio . pics ."
+                         ". . . . .";
+    grid-template-columns: 1fr 10fr 1fr 10fr 1fr;
+    grid-template-rows: 1.85fr 15fr 0.5fr;
+}
+
+#home .bioinfo {
+    grid-area: bio;
+    border-top: black solid 2px;
+    border-bottom: black solid 2px;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home .bioinfo h3 {
+    font-family: 'Pacifico', cursive;
+    color: rgb(0, 110, 255);
+    font-size: 32px;
+}
+
+#home .bioinfo #info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+#home .bioinfo #info h4 {
+    font-family: 'Pacifico', cursive;
+    color: rgb(94, 163, 253);
+    font-size: 24px;
+}
+
+#home .bioinfo #info p {
+    font-family: 'Arimo', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    margin-top: -3%;
+}
+
+#home .bioinfo #contact-icons {
+    float: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Arimo', sans-serif;
+    width: 100%;
+}
+
+#home .bioinfo #contact-icons #gm {
+    background-image: url("../img/gmail.svg");
+    width: 32px;
+    height: 32px;
+    background-size: cover;
+}
+
+#home .bioinfo #contact-icons #fb {
+    background-image: url("../img/fb.svg");
+    width: 32px;
+    height: 32px;
+    background-size: cover;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#home .outerpicdiv {
+    grid-area: pics;
+    border-top: black solid 2px;
+    border-bottom: black solid 2px;
+    padding-bottom: 24px;
+    padding-top: 24px;
+    display: grid;
+    grid-template-areas: "p p p"
+                         "p p p"
+                         "p p p";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 24px;
+    grid-column-gap: 24px;
+}
+
+#home .outerpicdiv .pictures {
+    background-size: cover;
+    background-color: rgba(238, 238, 238, 0.966);
+    background-image: none;
+}
