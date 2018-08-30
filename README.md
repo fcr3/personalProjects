@@ -9,3 +9,4 @@ I also have a private folder for other projects, but please email me if you woul
 Email: fcreyes04@gmail.com </br>
 </br>
 Will continue to post regularly :)
+Also I do have some private repositories as they relate to past internships. If you would like to have access to them, please request via email. These projects are out of my want to explore, and they show my past skill as a beginning developer. Thank you for reading!
